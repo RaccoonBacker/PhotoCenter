@@ -1,0 +1,281 @@
+.admin-card {
+  background: var(--color-light-beige);
+  border: 1px solid var(--color-dark-beige);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.admin-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.admin-card-header h2 {
+  margin: 0 0 5px;
+  color: var(--color-dark-blue);
+}
+
+.admin-card-header p {
+  font-size: 14px;
+  color: var(--color-medium-blue);
+}
+
+.admin-counter {
+  min-width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-dark-blue);
+  color: #fff;
+  font-size: 13px;
+}
+
+.admin-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--color-dark-beige);
+  border-radius: 8px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.admin-table th {
+  padding: 12px 14px;
+  background: var(--color-dark-beige);
+  color: var(--color-dark-blue);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.admin-table td {
+  padding: 11px 14px;
+  border-top: 1px solid var(--color-dark-beige);
+  color: var(--color-dark-blue);
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.admin-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.admin-table-input,
+.admin-table-select {
+  width: 100%;
+  min-height: 36px;
+  padding: 7px 9px;
+  border: 1px solid var(--color-dark-beige);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--color-dark-blue);
+  font: inherit;
+  outline: none;
+}
+
+.admin-table-input:focus,
+.admin-table-select:focus {
+  border-color: var(--color-light-blue);
+  box-shadow: 0 0 0 2px rgba(79, 134, 180, 0.12);
+}
+
+.admin-price-input {
+  min-width: 0;
+  width: 72px;
+}
+
+.admin-login {
+  font-weight: 600;
+  color: var(--color-dark-blue);
+}
+
+.admin-date-preview {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--color-medium-blue);
+}
+
+.admin-new-row {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.admin-empty {
+  padding: 24px;
+  text-align: center;
+  color: var(--color-medium-blue);
+}
+
+.admin-message {
+  margin-bottom: 16px;
+  padding: 10px 12px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.admin-message-error {
+  background: #f8d7da;
+  color: #842029;
+  border: 1px solid #f1aeb5;
+}
+
+.admin-message-success {
+  background: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #a3cfbb;
+}
+
+.admin-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.admin-page-button {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--color-dark-beige);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--color-dark-blue);
+  cursor: pointer;
+  font: inherit;
+}
+
+.admin-page-button:hover {
+  background: var(--color-light-beige);
+}
+
+.admin-page-button-active {
+  background: var(--color-dark-blue);
+  color: #fff;
+  border-color: var(--color-dark-blue);
+}
+
+.admin-table-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.admin-primary-button,
+.admin-secondary-button {
+  min-height: 38px;
+  padding: 8px 16px;
+  border-radius: 7px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.admin-primary-button {
+  border: 1px solid var(--color-dark-blue);
+  background: var(--color-dark-blue);
+  color: #fff;
+}
+
+.admin-primary-button:hover {
+  background: var(--color-medium-blue);
+  border-color: var(--color-medium-blue);
+}
+
+.admin-secondary-button {
+  border: 1px solid var(--color-dark-beige);
+  background: #fff;
+  color: var(--color-dark-blue);
+}
+
+.admin-secondary-button:hover {
+  background: var(--color-light-beige);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 92px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-active {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.status-inactive {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.status-order {
+  background: #fff3cd;
+  color: #664d03;
+}
+
+
+/* Таблица заказов: освобождаем место для клиента, исполнителя и статуса. */
+.admin-orders-table th:nth-child(6),
+.admin-orders-table td:nth-child(6) {
+  width: 1%;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.admin-orders-table th:nth-child(2),
+.admin-orders-table td:nth-child(2) {
+  min-width: 150px;
+}
+
+.admin-orders-table th:nth-child(4),
+.admin-orders-table td:nth-child(4) {
+  min-width: 150px;
+}
+
+.admin-orders-table th:nth-child(7),
+.admin-orders-table td:nth-child(7) {
+  min-width: 120px;
+}
+
+@media (max-width: 700px) {
+  .admin-card {
+    padding: 14px;
+  }
+
+  .admin-card-header {
+    flex-direction: column;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 9px 10px;
+  }
+
+  .admin-table-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admin-primary-button,
+  .admin-secondary-button {
+    width: 100%;
+  }
+}

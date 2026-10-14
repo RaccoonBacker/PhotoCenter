@@ -1,0 +1,22 @@
+﻿# Секреты
+Web.config
+*.user
+*.suo
+.vs/
+
+# NuGet
+packages/
+*.nupkg
+
+# Build
+bin/
+obj/
+*.dll
+*.pdb
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Node
+node_modules/

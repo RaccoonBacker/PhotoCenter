@@ -1,0 +1,135 @@
+.auth-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.auth-modal {
+  position: relative;
+  width: min(100%, 440px);
+  padding: 34px;
+  border-radius: 12px;
+  background: var(--color-beige);
+  color: var(--color-text-dark);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+.auth-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  color: var(--color-dark-blue);
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.auth-modal-header {
+  padding-right: 30px;
+  margin-bottom: 24px;
+}
+
+.auth-modal-header h2 {
+  margin: 0 0 8px;
+  color: var(--color-dark-blue);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.auth-modal-header p {
+  color: var(--color-medium-blue);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.auth-field span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+}
+
+.auth-field input {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid var(--color-dark-beige);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--color-text-dark);
+  font: inherit;
+  font-size: 15px;
+  outline: none;
+}
+
+.auth-field input:focus {
+  border-color: var(--color-light-blue);
+  box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.15);
+}
+
+.auth-submit {
+  margin-top: 4px;
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--color-medium-blue);
+  color: var(--color-text-light);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.auth-submit:hover {
+  background: var(--color-light-blue);
+}
+
+.auth-switch {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 20px;
+  color: var(--color-medium-blue);
+  font-size: 14px;
+}
+
+.auth-switch-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-medium-blue);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.auth-switch-button:hover {
+  color: var(--color-dark-blue);
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .auth-modal {
+    padding: 28px 22px;
+  }
+}

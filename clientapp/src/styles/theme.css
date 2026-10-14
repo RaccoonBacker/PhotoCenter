@@ -1,0 +1,21 @@
+:root {
+  --color-dark-blue: #1B2A4A;
+  --color-medium-blue: #2E4A7D;
+  --color-light-blue: #4A6FA5;
+  --color-beige: #F5F0E8;
+  --color-light-beige: #FAF7F2;
+  --color-dark-beige: #D4C9B8;
+  --color-text-dark: #1A1A1A;
+  --color-text-light: #F5F0E8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-beige);
+  color: var(--color-text-dark);
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,15 @@
+.placeholder {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 80px 24px;
+  background-color: var(--color-light-beige);
+  border: 2px dashed var(--color-dark-beige);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.placeholder p {
+  font-size: 20px;
+  color: var(--color-medium-blue);
+  margin: 0;
+}
