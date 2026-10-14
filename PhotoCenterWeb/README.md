@@ -3,7 +3,7 @@
 
 _______________ Стек технологий _______________
 
-Backend
+Backend (папка PhotoCenterWeb)
 - .NET Framework 4.7.2
 - ASP.NET MVC 5 — отдача SPA и статических файлов
 - ASP.NET Web API 2 — REST API для React
@@ -12,7 +12,7 @@ Backend
 - BCrypt.Net — хеширование паролей
 - JWT (HMAC-SHA256) — аутентификация и авторизация по ролям
 
-Frontend
+Frontend (папка clientapp)
 - React 19 — UI
 - React Router 7 — маршрутизация SPA
 - Vite — сборка бандла
@@ -24,6 +24,7 @@ Frontend
 - npm — управление пакетами JS
 
 _______________ Функциональность _______________
+
 Аутентификация
 - Вход по логину и паролю
 - JWT-токен с временем жизни 120 минут
